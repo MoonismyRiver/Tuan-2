@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập số 1 : <input type="'number" id="so1" value=""></p>
+<br>
+<br>
+
+<p>Nhập số 2 : <input type="'number" id="so2" value=""></p>
+<br><br>
+
+<button type="button"  onclick="sum()"> Show sum</button>: <p id="sum"></p>
+<script>
+    function sum(){
+        let a=document.getElementById('so1').value;
+        let b=document.getElementById('so2').value;
+ document.getElementById("sum").innerHTML=(a+b) ;}
+</script>
+
+</body>
+</html>

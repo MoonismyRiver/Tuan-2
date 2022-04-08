@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh tích</title>
+
+</head>
+<body>
+<div>
+    <p>Tính tích</p></div>
+<div>
+    Nhập số : <input id="1" type="number"></div>
+<div>
+    Hệ số :
+    <select id="2">
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+    </select>
+</div>
+
+<button onclick="tinhTich()">Show tích</button>
+: <p id="3"></p>
+
+<script>
+    function tinhTich() {
+        let a = document.getElementById("1").value;
+        let b = document.getElementById("2").value;
+        document.getElementById("3").innerHTML=(a*b);
+    }
+</script>
+</div>
+
+</body>
+</html>
