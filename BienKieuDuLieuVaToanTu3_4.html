@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Dien Tich và Chu vi Hình Tròn</title>
+</head>
+<body>
+<script>
+    let inputR = prompt("nhập bán kính hình tròn : ");
+    let r = parseInt(inputR);
+    if (r < 0) {
+        document.write('Nhập cẩn thận vào!')
+    } else {
+        let
+            C = r * 2 * 3.14;
+        let S = r * r * 3.14;
+        document.write('Chu vi là : ' + C + '  '+ ' Diện tích là :  ' + S)
+    }
+    ;
+</script>
+</body>
+</html>
