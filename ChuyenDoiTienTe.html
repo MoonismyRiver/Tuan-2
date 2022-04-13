@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển Đổi Tiền Tệ</title>
+</head>
+<body>
+<!---->
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+        <th><input id="num" type="number" name="so"></th>
+        <th>
+            <select id="so1">
+                <option>Viet Nam</option>
+                <option>USD</option>
+            </select>
+        </th>
+        <th>
+            <select id="so2">
+                <option>USD</option>
+<!--                <option>VietNam</option>-->
+
+            </select>
+        </th>
+        <th>
+            <button onclick="Chuyendoi()" style="background: yellowgreen">Convert</button>
+        </th>
+
+    </tr>
+</table>
+
+<div>
+    Result:<p id="sum"></p>
+</div>
+<script>
+
+    function Chuyendoi() {
+        let a = document.getElementById('num').value / 23000;
+        let b = document.getElementById('so2').value
+        document.getElementById("sum").innerHTML = (a + ' ' + b);
+    }
+</script>
+</body>
+</html>
